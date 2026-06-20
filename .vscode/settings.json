@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "/Users/heta/Desktop/StoryTeller/backend/.venv/bin/python",
+  "python.pythonPath": "/Users/heta/Desktop/StoryTeller/backend/.venv/bin/python",
+  "python.analysis.extraPaths": [
+    "./backend"
+  ],
+  "python.REPL.enableREPLSmartSend": false
+}
