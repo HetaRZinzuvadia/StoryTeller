@@ -1,8 +1,7 @@
-from sqlalchemy import Column, Integer, String,  DateTime
+from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.sql import func
-from sqlalchemy.orm import relationship
 
-from backend.db.database import Base
+from db.database import Base
 
 class StoryJob(Base):
     __tablename__ = "story_jobs"
@@ -14,5 +13,5 @@ class StoryJob(Base):
     status = Column(String)
     story_id = Column(Integer, nullable=True)
     error = Column(String, nullable=True)
-    created_date = Column(DateTime(timezone=True), server_default=func.now())
-    completed_job = Column(DateTime(timezone=True), nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    completed_at = Column(DateTime(timezone=True), nullable=True)
